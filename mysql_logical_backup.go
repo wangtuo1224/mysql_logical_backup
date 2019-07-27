@@ -34,7 +34,7 @@ var (
 	).Default("/usr/bin/zip").String()
 	keepDays      = kingpin.Flag("mysql.keepdays", "MySQL Backup Keep Days.").Default("3").Int()
 	mysqlHost     = kingpin.Flag("mysql.host", "MySQL Server Host.").Default("127.0.0.1").String()
-	mysqlPort     = kingpin.Flag("mysql.port", "MySQL Server Port.").Default("6033").Int()
+	mysqlPort     = kingpin.Flag("mysql.port", "MySQL Server Port.").Default("3306").Int()
 	mysqlUser     = kingpin.Flag("mysql.user", "MySQL Server User.").Default("backup_user").String()
 	mysqlPassword = kingpin.Flag("mysql.password", "MySQL Server Password.").Default("").String()
 	emailRecivers = kingpin.Flag("email.recivers", "Send email to users.").Default("").String()
